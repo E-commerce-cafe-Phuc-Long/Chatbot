@@ -1,0 +1,5 @@
+Yêu cầu chạy 2 Command Prompt
+1. Chạy các actions (truy vấn với database)
+rasa run actions
+2. Chạy rasa server
+rasa run --enable-api --cors "*"

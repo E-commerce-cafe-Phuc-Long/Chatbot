@@ -1,0 +1,91 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+  - ask_recommend_drinks
+  - ask_drinks
+  - ask_menu
+  - ask_price
+  - ask_promotion
+  - ask_location
+  - ask_opening_hours
+  - ask_ingredients
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+    - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+    - text: "Xin chào!\nTôi là ChatBot, rất hân hạnh được trò chuyện với bạn!"
+    - text: "Hey! How are you?"
+    - text: "Nice to meet you!"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Tôi có thể giúp gì cho bạn?"
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_thank_you:
+    - text: "Cảm ơn"
+    - text: "Thanks"
+    - text: "Cảm ơn bạn nha"
+
+  utter_goodbye:
+    - text: "Bye"
+    - text: "Tạm biệt bạn!"
+    - text: "Tạm biệt!\nHẹn gặp lại!"
+
+  utter_iamabot:
+    - text: "Tôi là bot và sẽ hỗ trợ bạn 24/24."
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_recommend_drinks:
+    - text: "Bạn muốn gọi đồ uống nào? Tôi có thể gợi ý danh sách cho bạn."
+
+  utter_ask_drinks:
+    - text: "Nếu bạn thích ngọt, hãy thử trà sữa trân châu. Nếu thích thanh mát, trà đào sẽ là lựa chọn tuyệt vời."
+
+  utter_ask_menu:
+    - text: "Menu của quán gồm có các loại nước phổ biến như trà trái cây, trà sữa, cà phê,... Bạn có thể xem thêm tại danh mục sản phẩm"
+
+  utter_ask_price:
+    - text: "Giá tại cửa hàng thường giao động từ 25k tới 45k"
+
+  utter_ask_promotion:
+    - text: "Hiện tại cửa hàng vẫn chưa có chương trình khuyến mãi nào."
+    - text: "Bạn hỏi khuyến mãi ư, rất tiếc là cửa hàng hiện vẫn chưa có"
+
+  utter_ask_location:
+    - text: "Cửa hàng hiện tại nằm ở Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh"
+    - text: "Cửa hàng chưa có chi nhánh. Bạn vui lòng tới địa chỉ được ghi trên website nha"
+
+  utter_ask_opening_hours:
+    - text: "Cửa hàng bắt đầu mở cửa lúc 6h30 nha bạn"
+    - text: "Cửa hàng kết thúc và đóng cửa lúc 22h30"
+    - text: "Cửa hàng vẫn mở cửa phục vụ các bạn tới 22h30 luôn đó"
+
+  utter_ask_ingredients:
+    - text: "Nếu bạn muốn biết thêm thành phần. Hãy xem mô tả ở chi tiết của ly nước mà bạn đặt mua nha"
+    - text: "Bạn muốn thêm đường vào cà phê. Bạn có thể chọn liều lượng muốn dùng khi đặt món"
+    - text: "Đặt món vẫn cho phép bạn chọn liều lượng của sản phẩm"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_query_drinks
+  - action_query_categories

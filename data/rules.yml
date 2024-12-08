@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+
+- rule: Say thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Suggest drinks
+  steps:
+  - intent: ask_recommend_drinks
+  - action: utter_ask_recommend_drinks
+
+- rule: Ask best-seller drinks
+  steps:
+  - intent: ask_drinks
+  - action: utter_ask_drinks
+  - action: action_query_drinks
+
+- rule: Provide menu information
+  steps:
+  - intent: ask_menu
+  - action: utter_ask_menu
+  - action: action_query_categories
+
+- rule: Provide drink prices
+  steps:
+  - intent: ask_price
+  - action: utter_ask_price
+
+- rule: Provide promotions
+  steps:
+  - intent: ask_promotion
+  - action: utter_ask_promotion
+
+- rule: Provide location
+  steps:
+  - intent: ask_location
+  - action: utter_ask_location
+
+- rule: Provide opening hours
+  steps:
+  - intent: ask_opening_hours
+  - action: utter_ask_opening_hours
+
+- rule: Provide ingredient details
+  steps:
+  - intent: ask_ingredients
+  - action: utter_ask_ingredients

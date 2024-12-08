@@ -1,0 +1,138 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - good afternoon
+      - hey there
+      - let's go
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - đương nhiên
+      - đúng rồi nha
+
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - bạn có phải là bot không?
+      - bạn có phải là con người không?
+      - tôi đang nói chuyện với ai?
+
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: ask_recommend_drinks
+    examples: |
+      - bạn có thể giúp tôi gợi ý một số món hay không?
+
+  - intent: ask_drinks
+    examples: |
+      - cửa hàng có đồ uống nào ngon không?
+      - có đồ uống nào best seller hay không?
+
+  - intent: ask_menu
+    examples: |
+      - cửa hàng có món nào nổi bật?
+      - có cà phê hay trà sữa nào nổi bật không?
+      - quán có món gì?
+      - menu gồm những gì?
+
+  - intent: ask_price
+    examples: |
+      - bao nhiêu tiền?
+      - giá của trà sữa này là bao nhiêu?
+      - trà này giá sao?
+
+  - intent: ask_promotion
+    examples: |
+      - quán có khuyến mãi gì không?
+      - khuyến mãi hôm nay?
+
+  - intent: ask_location
+    examples: |
+      - quán ở đâu?
+      - địa chỉ là gì?
+      - quán có chi nhánh nào gần đây không?
+
+  - intent: ask_opening_hours
+    examples: |
+      - quán mở cửa lúc mấy giờ?
+      - quán đóng cửa lúc mấy giờ?
+      - có bán vào tối không?
+
+  - intent: ask_ingredients
+    examples: |
+      - trà sữa có gì bên trong?
+      - cà phê có dùng đường không?
+      - có món ít đường không?
